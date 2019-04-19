@@ -6,7 +6,7 @@ import java.net.Socket;
 
 public class DigitCountServer {
 
-    ProblemObject serverObject = new ProblemObject();
+    ProblemObject serverObject = null;
     ObjectInputStream objInStream;
     PrintWriter printWriter;
 
@@ -41,15 +41,57 @@ public class DigitCountServer {
         while (true){
             try {
                 serverObject = (ProblemObject) objInStream.readObject();
-                System.out.println(serverObject.toString());
-                printWriter.println("Odebrano: " + serverObject.toString());
-                printWriter.flush();
-
+                if (serverObject != null) {
+                    int result = solver(serverObject.getLowerBound(), serverObject.getUpperBound(),
+                            serverObject.getDigitToCheck(), serverObject.isAllDigits());
+                    printWriter.println("W podanym przedziale znaleziono: " + result);
+                    printWriter.flush();
+                    serverObject = null;
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }
         }
+    }
+
+    public class SendThread implements Runnable{
+        Socket gniazdo;
+        ObjectInputStream obiektWejscie;
+        PrintWriter printWriterWatek;
+
+        public SendThread(Socket socketClient){
+            try{
+                gniazdo = socketClient;
+                obiektWejscie = new ObjectInputStream(gniazdo.getInputStream());
+                printWriterWatek = new PrintWriter(gniazdo.getOutputStream());
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        @Override
+        public void run() {
+
+        }
+    }
+
+    public int solver(int start, int end, int digit, boolean allDigits){
+        int count = 0;
+        for (int i = start; i < end; i++){
+
+            int x = i;
+            while(x > 0){
+                if (x == digit || x%10 == digit){
+                    System.out.println(i);
+                    count++;
+                    if (!allDigits) break;
+                }
+                x = x/10;
+            }
+        }
+        return count;
     }
 }

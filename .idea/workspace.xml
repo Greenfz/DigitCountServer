@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6078ca8e-7e90-4b1c-9911-e68c777ffbd4" name="Default Changelist" comment="" />
+    <list default="true" id="6078ca8e-7e90-4b1c-9911-e68c777ffbd4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/SolverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DigitCountServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DigitCountServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DigitCountServer/com/company/DigitCountServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DigitCountServer/com/company/DigitCountServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DigitCountServer/com/company/ProblemObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DigitCountServer/com/company/ProblemObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/DigitCountServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DigitCountServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ProblemObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ProblemObject.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,14 +23,31 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/DigitCountServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+            <state relative-caret-position="305">
+              <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#312#452#0" />
                 <element signature="e#475#519#0" />
                 <element signature="e#694#730#0" />
                 <element signature="e#803#847#0" />
+                <element signature="class#SendThread#0;class#DigitCountServer#0" />
+                <element signature="method#SendThread#0;class#SendThread#0;class#DigitCountServer#0" />
+                <element signature="method#run#0;class#SendThread#0;class#DigitCountServer#0" />
+                <element signature="method#solver#0;class#DigitCountServer#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/SolverTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#initEach#0;class#SolverTest#0" />
               </folding>
             </state>
           </provider>
@@ -29,7 +55,20 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/ProblemObject.java">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+              <folding>
+                <element signature="e#296#297#0" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#363#364#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+                <element signature="e#434#435#0" expanded="true" />
+                <element signature="e#470#471#0" expanded="true" />
+                <element signature="e#502#503#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -38,12 +77,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/com/company/ProblemObject.java" />
+        <option value="$PROJECT_DIR$/src/com/company/SolverTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/DigitCountServer.java" />
       </list>
     </option>
@@ -54,6 +99,7 @@
     <option name="width" value="1612" />
     <option name="height" value="876" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -66,6 +112,17 @@
               <item name="DigitCountServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="DigitCountServer" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DigitCountServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DigitCountServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DigitCountServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DigitCountServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -75,13 +132,26 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555701480887" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/libFX/javafx-sdk-11.0.2/lib/javafx-swt.jar!/" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555711062958" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xDxDxD/src/com/company/Main.java" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.company" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.company" />
     </key>
@@ -98,7 +168,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.DigitCountServer">
     <configuration name="DigitCountServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.DigitCountServer" />
       <module name="DigitCountServer" />
@@ -112,9 +182,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SolverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DigitCountServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.SolverTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.DigitCountServer" />
+        <item itemvalue="JUnit.SolverTest" />
       </list>
     </recent_temporary>
   </component>
@@ -131,6 +217,38 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="SolverTest - 2019.04.19 at 22h 30m 01s.xml">
+      <configuration name="SolverTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolverTest - 2019.04.19 at 22h 31m 38s.xml">
+      <configuration name="SolverTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolverTest - 2019.04.19 at 22h 36m 27s.xml">
+      <configuration name="SolverTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolverTest - 2019.04.19 at 22h 37m 28s.xml">
+      <configuration name="SolverTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolverTest - 2019.04.19 at 22h 39m 05s.xml">
+      <configuration name="SolverTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolverTest - 2019.04.19 at 22h 39m 24s.xml">
+      <configuration name="SolverTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolverTest - 2019.04.19 at 22h 39m 47s.xml">
+      <configuration name="SolverTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolverTest - 2019.04.19 at 22h 42m 26s.xml">
+      <configuration name="SolverTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolverTest - 2019.04.19 at 22h 44m 19s.xml">
+      <configuration name="SolverTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolverTest - 2019.04.19 at 22h 45m 41s.xml">
+      <configuration name="SolverTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1608" height="908" extended-state="6" />
     <editor active="true" />
@@ -145,10 +263,10 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32911393" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3164557" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3164557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -171,19 +289,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../xDxDxD/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" selection-start-line="6" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/io/ObjectInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="429" selection-start-line="429" selection-end-line="429" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/ProblemObject.java">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding>
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/SolverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initEach#0;class#SolverTest#0" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/DigitCountServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+        <state relative-caret-position="305">
+          <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#312#452#0" />
             <element signature="e#475#519#0" />
             <element signature="e#694#730#0" />
             <element signature="e#803#847#0" />
+            <element signature="class#SendThread#0;class#DigitCountServer#0" />
+            <element signature="method#SendThread#0;class#SendThread#0;class#DigitCountServer#0" />
+            <element signature="method#run#0;class#SendThread#0;class#DigitCountServer#0" />
+            <element signature="method#solver#0;class#DigitCountServer#0" />
           </folding>
         </state>
       </provider>

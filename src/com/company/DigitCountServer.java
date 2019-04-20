@@ -1,69 +1,43 @@
 package com.company;
 
 import java.io.*;
-import java.net.ConnectException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 public class DigitCountServer {
 
-    ProblemObject serverObject = null;
-    ObjectInputStream objInStream;
-    PrintWriter printWriter;
+    private Socket clientSocket = null;
+    private ServerSocket serverSocket = null;
 
-    Socket clientSocket = null;
-    ServerSocket serverSocket = null;
-
-
+// MAIN
     public static void main(String[] args) {
         DigitCountServer server = new DigitCountServer();
         server.connect();
     }
-
-    public void connect() {
+// CREATING CONNECTION
+    private void connect() {
 
         try {
             serverSocket = new ServerSocket(5555);
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        try {
-            clientSocket = serverSocket.accept();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        try {
-            objInStream = new ObjectInputStream(clientSocket.getInputStream());
-            printWriter = new PrintWriter(clientSocket.getOutputStream());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        while (true){
-            try {
-                serverObject = (ProblemObject) objInStream.readObject();
-                if (serverObject != null) {
-                    int result = solver(serverObject.getLowerBound(), serverObject.getUpperBound(),
-                            serverObject.getDigitToCheck(), serverObject.isAllDigits());
-                    printWriter.println("W podanym przedziale znaleziono: " + result);
-                    printWriter.flush();
-                    serverObject = null;
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-                break;
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
+            while (true){
+                clientSocket = serverSocket.accept();
+                Thread watek = new Thread(new SendThread(clientSocket));
+                System.out.println("nowy watek i polaczenie");
+                watek.start();
             }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
+// NEW THREAD IMPLEMENTATION AND SOCKET
     public class SendThread implements Runnable{
         Socket gniazdo;
         ObjectInputStream obiektWejscie;
         PrintWriter printWriterWatek;
 
-        public SendThread(Socket socketClient){
+        private SendThread(Socket socketClient){
             try{
                 gniazdo = socketClient;
                 obiektWejscie = new ObjectInputStream(gniazdo.getInputStream());
@@ -74,20 +48,42 @@ public class DigitCountServer {
             }
         }
 
+// READING OBJECT SENDING SOLUTION
         @Override
         public void run() {
-
+            ProblemObject obiektWatku;
+            while (!gniazdo.isClosed()){
+                try {
+                    obiektWatku = (ProblemObject) obiektWejscie.readObject();
+                    if (obiektWatku != null) {
+                        int result = solver(obiektWatku.getLowerBound(), obiektWatku.getUpperBound(),
+                                obiektWatku.getDigitToCheck(), obiektWatku.isAllDigits());
+                        printWriterWatek.println("W podanym przedziale znaleziono: " + result);
+                        printWriterWatek.flush();
+                    }
+                } catch (IOException e) {
+                        try {
+                            gniazdo.close();
+                    }   catch (IOException e1) {
+                            e1.printStackTrace();
+                    }
+                    System.out.println(e.getMessage());
+                } catch (ClassNotFoundException e) {
+                    System.out.println(e.getMessage());
+                }
+            }
         }
     }
+    
+// USED TO SOLVE PROBLEM
+    int solver(int start, int end, int digit, boolean allDigits){
 
-    public int solver(int start, int end, int digit, boolean allDigits){
         int count = 0;
         for (int i = start; i < end; i++){
 
             int x = i;
             while(x > 0){
                 if (x == digit || x%10 == digit){
-                    System.out.println(i);
                     count++;
                     if (!allDigits) break;
                 }

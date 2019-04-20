@@ -1,6 +1,7 @@
 package com.company;
 
 import java.io.*;
+import java.net.ConnectException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -50,6 +51,7 @@ public class DigitCountServer {
                 }
             } catch (IOException e) {
                 e.printStackTrace();
+                break;
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }

@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6078ca8e-7e90-4b1c-9911-e68c777ffbd4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/SolverTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DigitCountServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DigitCountServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DigitCountServer/com/company/DigitCountServer$SendThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DigitCountServer/com/company/DigitCountServer$SendThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DigitCountServer/com/company/DigitCountServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DigitCountServer/com/company/DigitCountServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DigitCountServer/com/company/ProblemObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DigitCountServer/com/company/ProblemObject.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/DigitCountServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DigitCountServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ProblemObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ProblemObject.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/DigitCountServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
+            <state relative-caret-position="903">
+              <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#312#452#0" />
@@ -105,28 +101,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="DigitCountServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DigitCountServer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DigitCountServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DigitCountServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DigitCountServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DigitCountServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
@@ -136,14 +111,14 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555711062958" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555760781666" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../xDxDxD/src/com/company/Main.java" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -251,14 +226,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1608" height="908" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2503209" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2503209" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
@@ -266,7 +240,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32911393" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3164557" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3164557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -332,8 +306,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/DigitCountServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
+        <state relative-caret-position="903">
+          <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#312#452#0" />
